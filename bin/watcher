@@ -1,0 +1,27 @@
+#!/usr/bin/env php
+<?php
+
+if (PHP_SAPI !== 'cli') {
+    die('watcher should be invoked via the CLI version of PHP, not the ' . PHP_SAPI . ' SAPI' . PHP_EOL);
+}
+
+$files = array(
+    __DIR__ . '/../vendor/autoload.php',
+    __DIR__ . '/../../../autoload.php',
+);
+
+foreach ($files as $file) {
+    if (file_exists($file)) {
+        require $file;
+        define('WATCHER_COMPOSER_INSTALL', $file);
+        break;
+    }
+}
+
+define('WATCHER_SLEEP', 1);
+define('WATCHER_VERSION', '0.0.1');
+define('WATCHER_DESCRIPTION', '
+Run arbitrary command on file change.
+');
+
+(new \Amad\Watcher\Console\WatcherApplication(WATCHER_VERSION))->run();

@@ -21,5 +21,8 @@ $ composer global require stunt/watcher
 ## Example Usage
 
 ```
-$ bin/watcher phpunit src/ tests/
+$ watcher phpunit ./
+```
+```
+$ watcher 'clear && phpunit -c phpunit.xml' src/ tests/
 ```

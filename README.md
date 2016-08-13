@@ -10,6 +10,7 @@ $ watcher <command> <file> (<file>)...
 [![Latest Stable Version](https://img.shields.io/packagist/v/stunt/watcher.svg?style=flat-square)](https://packagist.org/packages/stunt/watcher)
 [![Minimum PHP Version](https://img.shields.io/badge/php-%3E%3D%205.5.9-8892BF.svg?style=flat-square)](https://php.net/)
 [![Build Status](https://travis-ci.org/Stunt/watcher.svg?branch=master)](https://travis-ci.org/Stunt/watcher)
+[![SensioLabsInsight](https://insight.sensiolabs.com/projects/766f28cd-7811-4b53-b2fb-974332d59023/mini.png)](https://insight.sensiolabs.com/projects/766f28cd-7811-4b53-b2fb-974332d59023)
 
 ## Installation
 

@@ -72,7 +72,7 @@ class Watcher
      * @param  \SplFileInfo  $file
      * @return boolean
      */
-    private function changed($file)
+    private function changed(\SplFileInfo $file)
     {
         return filemtime($file->getRealPath()) > $this->timestamp;
     }

@@ -7,13 +7,32 @@ use Symfony\Component\Process\Process;
 
 class Watcher
 {
-    /** @var string */
+    /**
+     * Command to run on file changes
+     *
+     * @var string
+     */
     private $command;
-    /** @var array */
+
+    /**
+     * Specified file(s)
+     *
+     * @var array
+     */
     private $files;
-    /** @var integer */
+
+    /**
+     * Sleep between each shift to check files
+     *
+     * @var integer
+     */
     private $sleep;
-    /** @var integer */
+
+    /**
+     * Timestamp for comparison
+     *
+     * @var integer
+     */
     private $timestamp;
 
     /**
@@ -29,6 +48,11 @@ class Watcher
         $this->timestamp = time();
     }
 
+    /**
+     * Watch specified files and trigger command on file change
+     *
+     * @param  boolean $runOnce
+     */
     public function watch($runOnce = false)
     {
         while (true) {
@@ -67,7 +91,7 @@ class Watcher
     }
 
     /**
-     * Compare file mtime against timestamp
+     * Check if any file modified or new file created
      *
      * @param  \SplFileInfo  $file
      * @return boolean

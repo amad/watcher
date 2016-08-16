@@ -6,13 +6,14 @@
     "homepage": "https://github.com/stunt/watch",
     "keywords": [
         "watch",
-        "watcher"
+        "watcher",
+        "resource"
     ],
     "authors": [
         {
             "name": "Ahmad Samiei",
             "homepage": "https://stunt.github.io/watcher/",
-            "role": "Developer",
+            "role": "Developer"
         }
     ],
     "minimum-stability": "dev",

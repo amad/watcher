@@ -26,3 +26,9 @@ $ watcher phpunit ./
 ```
 $ watcher 'clear && phpunit -c phpunit.xml' src/ tests/
 ```
+```
+$ watcher 'docker run unitests' src/ tests/
+```
+```
+$ watcher 'docker exec project-container behat' src/ tests/features/
+```

@@ -5,6 +5,9 @@ namespace Stunt\Watcher;
 use Symfony\Component\Finder\Finder;
 use Symfony\Component\Process\Process;
 
+/**
+ * @author Ahmad Samiei
+ */
 class Watcher
 {
     /**

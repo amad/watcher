@@ -11,7 +11,8 @@
     "authors": [
         {
             "name": "Ahmad Samiei",
-            "email": "ahmadsamiei@gmail.com"
+            "homepage": "https://stunt.github.io/watcher/",
+            "role": "Developer",
         }
     ],
     "minimum-stability": "dev",

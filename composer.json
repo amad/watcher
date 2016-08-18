@@ -1,13 +1,14 @@
 {
     "name": "stunt/watcher",
-    "description": "Run arbitrary command on file change",
+    "description": "Run arbitrary command on file change. watch-and-runner",
     "type": "project",
     "license": "MIT",
     "homepage": "https://stunt.github.io/watcher",
     "keywords": [
         "watch",
         "watcher",
-        "resource"
+        "resource",
+        "watch-and-runner"
     ],
     "authors": [
         {

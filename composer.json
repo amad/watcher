@@ -3,7 +3,7 @@
     "description": "Run arbitrary command on file change",
     "type": "project",
     "license": "MIT",
-    "homepage": "https://github.com/stunt/watch",
+    "homepage": "https://stunt.github.io/watcher",
     "keywords": [
         "watch",
         "watcher",
@@ -12,7 +12,7 @@
     "authors": [
         {
             "name": "Ahmad Samiei",
-            "homepage": "https://stunt.github.io/watcher/",
+            "homepage": "http://samiei.org",
             "role": "Developer"
         }
     ],

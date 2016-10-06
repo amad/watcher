@@ -82,7 +82,7 @@ class Watcher
         $process = new Process($this->command);
         $process->setTty(true);
         $process->run();
-        print $process->getOutput();
+        echo $process->getOutput();
     }
 
     /**
@@ -90,14 +90,15 @@ class Watcher
      */
     private function getFiles()
     {
-        return (new Finder)->ignoreUnreadableDirs()->files()->in($this->files);
+        return (new Finder())->ignoreUnreadableDirs()->files()->in($this->files);
     }
 
     /**
      * Check if any file modified or new file created.
      *
-     * @param  \SplFileInfo $file
-     * @return boolean
+     * @param \SplFileInfo $file
+     *
+     * @return bool
      */
     private function changed(\SplFileInfo $file)
     {

@@ -3,9 +3,9 @@
 namespace Stunt\Watcher\Console;
 
 use Symfony\Component\Console\Application;
-use Symfony\Component\Console\Input\InputOption;
-use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Console\Input\InputDefinition;
+use Symfony\Component\Console\Input\InputInterface;
+use Symfony\Component\Console\Input\InputOption;
 
 class WatcherApplication extends Application
 {
@@ -31,7 +31,7 @@ class WatcherApplication extends Application
     protected function getDefaultCommands()
     {
         $defaultCommands = parent::getDefaultCommands();
-        $defaultCommands[] = new WatcherCommand;
+        $defaultCommands[] = new WatcherCommand();
 
         return $defaultCommands;
     }

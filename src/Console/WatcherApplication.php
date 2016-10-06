@@ -10,7 +10,7 @@ use Symfony\Component\Console\Input\InputDefinition;
 class WatcherApplication extends Application
 {
     /**
-     * @inheritDoc
+     * {@inheritdoc}
      */
     public function __construct($version)
     {
@@ -18,7 +18,7 @@ class WatcherApplication extends Application
     }
 
     /**
-     * @inheritDoc
+     * {@inheritdoc}
      */
     protected function getCommandName(InputInterface $input)
     {
@@ -26,7 +26,7 @@ class WatcherApplication extends Application
     }
 
     /**
-     * @inheritDoc
+     * {@inheritdoc}
      */
     protected function getDefaultCommands()
     {
@@ -37,7 +37,7 @@ class WatcherApplication extends Application
     }
 
     /**
-     * @inheritDoc
+     * {@inheritdoc}
      */
     public function getDefinition()
     {

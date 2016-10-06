@@ -11,37 +11,37 @@ use Symfony\Component\Process\Process;
 class Watcher
 {
     /**
-     * Command to run on file changes
+     * Command to run on file changes.
      *
      * @var string
      */
     private $command;
 
     /**
-     * Specified file(s)
+     * Specified file(s).
      *
      * @var array
      */
     private $files;
 
     /**
-     * Sleep between each shift to check files
+     * Sleep between each shift to check files.
      *
-     * @var integer
+     * @var int
      */
     private $sleep;
 
     /**
-     * Timestamp for comparison
+     * Timestamp for comparison.
      *
-     * @var integer
+     * @var int
      */
     private $timestamp;
 
     /**
-     * @param string  $command
-     * @param array   $files
-     * @param integer $sleep
+     * @param string $command
+     * @param array  $files
+     * @param int    $sleep
      */
     public function __construct($command, array $files, $sleep)
     {
@@ -52,9 +52,9 @@ class Watcher
     }
 
     /**
-     * Watch specified files and trigger command on file change
+     * Watch specified files and trigger command on file change.
      *
-     * @param  boolean $runOnce
+     * @param bool $runOnce
      */
     public function watch($runOnce = false)
     {
@@ -73,7 +73,7 @@ class Watcher
     }
 
     /**
-     * Update timestamp and trigger command
+     * Update timestamp and trigger command.
      */
     private function trigger()
     {
@@ -94,9 +94,9 @@ class Watcher
     }
 
     /**
-     * Check if any file modified or new file created
+     * Check if any file modified or new file created.
      *
-     * @param  \SplFileInfo  $file
+     * @param  \SplFileInfo $file
      * @return boolean
      */
     private function changed(\SplFileInfo $file)

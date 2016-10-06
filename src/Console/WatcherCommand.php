@@ -12,7 +12,7 @@ use Symfony\Component\Console\Output\OutputInterface;
 class WatcherCommand extends Command
 {
     /**
-     * @inheritDoc
+     * {@inheritdoc}
      */
     protected function configure()
     {
@@ -25,7 +25,7 @@ class WatcherCommand extends Command
     }
 
     /**
-     * @inheritDoc
+     * {@inheritdoc}
      */
     protected function execute(InputInterface $input, OutputInterface $output)
     {
@@ -34,7 +34,7 @@ class WatcherCommand extends Command
     }
 
     /**
-     * @inheritDoc
+     * {@inheritdoc}
      */
     protected function initialize(InputInterface $input, OutputInterface $output)
     {
